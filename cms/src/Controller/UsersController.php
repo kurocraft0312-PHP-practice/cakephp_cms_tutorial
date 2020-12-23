@@ -109,7 +109,7 @@ class UsersController extends AppController
         // 無限リダイレクトループの問題を防ぎます
         // $this->Authentication->addUnauthenticatedActions(['login']);
         // TODO:こっちを有効化する
-        // $this->Authentication->addUnauthenticatedActions(['login', 'add']);
+        $this->Authentication->addUnauthenticatedActions(['login', 'add']);
     }
 
     public function login()
